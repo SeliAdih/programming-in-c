@@ -22,6 +22,7 @@ int myOtherNum = 23;
 myOtherNum = myNum;
 printf("%d",myOtherNum);*/
 
+
 //Day two of programming in C
 /*int x = 34;
 int y = 48;
@@ -41,7 +42,7 @@ char studentGrade = 'B';
 printf("Student id: %d\n", studentID);
 printf("Student age: %d\n", studentAge);
 printf("Student fee: %.2f\n", studentFee);
-printf("Student grade: %c", studentGrade);*/
+printf("Student grade: %c", studentGrade);
 
 //Calculating the area of a circle
 int radius = 7;
@@ -50,5 +51,82 @@ int pi = 3.14159;
 float area = pi * radius * radius;
 printf("The area of the circle is %f",area);
 //Thats all for day two
+
+
+//Day three of programming in C
+char myText[] = "Hello";
+printf("%s\n", myText);
+double myNum = 45.7899;
+printf ("%lf\n", myNum);
+
+double number = 67e8;//this is 67 * 10^8. use double because its a large number. and also a decimal
+printf("%lf", number);
+float myFloatNum = 3.5;
+double myDoubleNum = 19.99;
+
+printf("%f\n", myFloatNum); 
+printf("%lf", myDoubleNum);
+//So this is the normal representation of float numbers. it will show all the zero's behind the point. so the set the precision, you have to state the number of decimal points.
+printf("%.1f\n", myFloatNum);
+printf("%.2lf\n", myDoubleNum);// so this sets the precision for the output in the terminal.
+//ps..note to self, dont forget to add the colon--> ;
+int myInt;
+float myFloat;
+double myDouble;
+char myChar;
+
+printf("%zu\n", sizeof(myInt));
+printf("%zu\n", sizeof(myFloat));
+printf("%zu\n", sizeof(myDouble));
+printf("%zu\n", sizeof(myChar));//%zu is used to show the size. the size of operator returns the value of type size_t which as an unassigned integer type. so its better to use %zu than %d.
+
+
+//Day four of programming in C
+int number_of_bags = 20;
+int cost_per_bag = 400;
+float total_cost_of_bags = number_of_bags * cost_per_bag;
+char myCurrency[]= "cedis";
+
+printf(" Number of bags sold in December:%d %s \n",number_of_bags, myCurrency);
+printf(" Cost per bag:%d %s \n",cost_per_bag, myCurrency);
+printf("Total cost of bags:%.2f %s \n",total_cost_of_bags, myCurrency);
+
+//kniwing the size in bytes of the various types of data
+printf("Size of int: %zu bytes\n", sizeof(int));
+printf("Size of double: %zu bytes\n", sizeof(double));
+printf("Size of short int: %zu bytes\n", sizeof(short int));
+printf("Size of unsigned int: %zu bytes\n", sizeof(unsigned int));
+printf("Size of long int: %zu bytes\n", sizeof(long int));
+printf("Size of long long int: %zu bytes\n", sizeof(long long int));
+printf("Size of unsigned long long int: %zu bytes\n", sizeof(unsigned long long int));
+printf("Size of long double: %zu bytes\n", sizeof(long double));
+// but for everyday programming you can just stick to int, char, float and double. its when you need control over size that you use the others.
+
+//Explicit/manual conversion of an int to a float
+float division = (float) 5/2;
+printf("%f", division);
+//So when you use this method, you are able to get the right value of the division, which is a float. if you use int, the editor will print just the whole number and leave the decimals behind.
+int sum = 5 / 2;
+printf("%d", sum);// the output will be two instead of 2.5
+float fraction = 5 / 2;
+printf("%f", fraction);// it will still print 2.00000 instead of 2.5
+
+// Set the maximum possible score in the game to 500
+int maxScore = 500;
+
+// The actual score of the user
+int userScore = 423;
+
+/* Calculate the percantage of the user's score in relation to the maximum available score.
+Convert userScore to float to make sure that the division is accurate 
+float percentage = (float) userScore / maxScore * 100.0;
+
+// Print the percentage
+printf("User's percentage is %.2f", percentage);*/
+
+const int minutesPerHour = 60;
+// this is used for variales that are unlikely to change or variables that we want to remain constant in our code. its good practice to write them in upper case.
+const int MINUTESPERHOUR = 60;
+
 return 0;
 }
