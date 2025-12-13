@@ -122,11 +122,57 @@ Convert userScore to float to make sure that the division is accurate
 float percentage = (float) userScore / maxScore * 100.0;
 
 // Print the percentage
-printf("User's percentage is %.2f", percentage);*/
+printf("User's percentage is %.2f", percentage);
 
 const int minutesPerHour = 60;
 // this is used for variales that are unlikely to change or variables that we want to remain constant in our code. its good practice to write them in upper case.
 const int MINUTESPERHOUR = 60;
 
+//Day five of programming in C
+int x = 5;
+
+++x; // Increment x by 1
+printf("%d\n", x); // 6
+// ++ is used to increase the value of a number by 1
+
+int y = 7;
+--y;//decrease y by 1
+printf("%d\n",y);
+//-- is used to decrease the value of a number my 1
+
+int money_in_my_account = 500000;
+char currency[] = "cedis";
+
+//one cedi enters my account every time i edit a picure
+money_in_my_account++;
+money_in_my_account++;
+money_in_my_account++;
+//amytime i buy credit one cedi is taken away from my account
+money_in_my_account--;
+money_in_my_account--;
+
+printf("%d %s \n",money_in_my_account,currency);
+int savings = 100; 
+savings += 50; // add 50 to savings
+
+printf("Total savings: %d\n", savings);
+
+int x = 5;
+int y = 3;
+printf("%d\n", x > y); 
+printf("%d\n", x ==y);
+printf("%d\n", x < y);
+printf("%d\n", x < y);
+printf("%d\n", x != y);
+printf("%d\n", x >= y);
+printf("%d\n", x <=y);
+//so the outputs of the following will be 1 and 0 1 meaning true and 0 meanig false.
+*/
+int isLoggedIn = 1;
+int isAdmin = 0;
+
+printf("Regular user: %d\n", isLoggedIn && !isAdmin);
+printf("Has access: %d\n", isLoggedIn || isAdmin);
+printf("Not logged in: %d\n", !isLoggedIn);
 return 0;
 }
