@@ -186,7 +186,7 @@ bool will_i_fail_ = false;
 printf("%d\n",will_i_pass_the_exam);
 printf("%d", will_i_fail_);
 //but then booleans are mostly used for comparison.
-printf("%d", 10 > 9);  // Returns 1 (true) because 10 is greater than 9*/
+printf("%d", 10 > 9);  // Returns 1 (true) because 10 is greater than 9
 
 int s = 34;
 int u = 67;
@@ -195,5 +195,25 @@ printf("%d", s > u);
 printf("%d", s == u);
 printf("%d", s < u);
 printf("%d", s != u);
+
+
+//day seven of programming in C
+
+int college_of_engineering_cut_off_point = 06;
+int cut_off_point_Seli = 06;
+int cut_off_point_Amanda = 13;
+
+printf("%d\n",cut_off_point_Amanda <= college_of_engineering_cut_off_point);
+printf("%d", cut_off_point_Seli <= college_of_engineering_cut_off_point);
+//if the result is 1, it means the person is qualified. if its o then not qualified.
+//now were going to use if and else statements.
+int myAge = 34;
+int VotingAge = 18;
+
+if(myAge>= VotingAge){
+    printf("Old enough to vote");
+}else{
+    printf("Not qualified to vote!");
+}
 return 0;
 }
