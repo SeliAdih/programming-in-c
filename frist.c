@@ -2,9 +2,10 @@
 Finally my very first c program
 *///Day one of learning C programming language
 #include <stdio.h>
+#include <stdbool.h>
 int main()
 {
-/*printf("Hello world!\t");
+printf("Hello world!\t");
 printf("Have a nice day!\n");
 printf("My name is Seli.\n");
 printf("I am learning C programming language.\nAnd it is awesome!\n");
@@ -20,11 +21,11 @@ printf("I am %d years old.\n ",19);
 int myNum = 35;
 int myOtherNum = 23;
 myOtherNum = myNum;
-printf("%d",myOtherNum);*/
+printf("%d",myOtherNum);
 
 
 //Day two of programming in C
-/*int x = 34;
+int x = 34;
 int y = 48;
 int sum = x + y;
 printf("%d", sum);
@@ -117,8 +118,8 @@ int maxScore = 500;
 // The actual score of the user
 int userScore = 423;
 
-/* Calculate the percantage of the user's score in relation to the maximum available score.
-Convert userScore to float to make sure that the division is accurate 
+//Calculate the percantage of the user's score in relation to the maximum available score.
+//Convert userScore to float to make sure that the division is accurate 
 float percentage = (float) userScore / maxScore * 100.0;
 
 // Print the percentage
@@ -167,12 +168,32 @@ printf("%d\n", x != y);
 printf("%d\n", x >= y);
 printf("%d\n", x <=y);
 //so the outputs of the following will be 1 and 0 1 meaning true and 0 meanig false.
-*/
+
 int isLoggedIn = 1;
 int isAdmin = 0;
 
 printf("Regular user: %d\n", isLoggedIn && !isAdmin);
 printf("Has access: %d\n", isLoggedIn || isAdmin);
 printf("Not logged in: %d\n", !isLoggedIn);
+
+
+
+//day six in programming in C
+//so ive learnt that when using booleans you cant just use something like int or char to set it. its not inbuilt. so you have to add #include <stdbool.h> to the header so ot will work
+
+bool will_i_pass_the_exam = true;
+bool will_i_fail_ = false;
+printf("%d\n",will_i_pass_the_exam);
+printf("%d", will_i_fail_);
+//but then booleans are mostly used for comparison.
+printf("%d", 10 > 9);  // Returns 1 (true) because 10 is greater than 9*/
+
+int s = 34;
+int u = 67;
+
+printf("%d", s > u);
+printf("%d", s == u);
+printf("%d", s < u);
+printf("%d", s != u);
 return 0;
 }
