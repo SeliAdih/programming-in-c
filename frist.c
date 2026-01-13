@@ -1,10 +1,12 @@
-/*
-Finally my very first c program
-*///Day one of learning C programming language
+
+//Finally my very first c program
+//Day one of learning C programming language
 #include <stdio.h>
 #include <stdbool.h>
 int main()
 {
+
+/*
 printf("Hello world!\t");
 printf("Have a nice day!\n");
 printf("My name is Seli.\n");
@@ -215,5 +217,28 @@ if(myAge>= VotingAge){
 }else{
     printf("Not qualified to vote!");
 }
+*/
+ // day 8 of programming in C
+
+ int my_cwa = 78 ;
+ int first_class = 70 ;
+ if (my_cwa >= first_class){
+    printf("Seli is a first class student");
+ }else{
+    printf("Seli has to do better");
+ }
+
+if (my_cwa >= first_class){
+    printf("Seli is a first class student");
+}else if (my_cwa < first_class){
+    printf ("Seli's CWA is BAD she has to improve");
+}else {
+    printf("Seli has to do better");
+}
+// so another way of using if and elsi is by using the shorthand if...else. also known as the ternary operator. so instead ogf going through the whole if else thing..which involves many lines of code just use this.
+ 
+// so with the same example
+(my_cwa >= first_class) ? printf("Seli is a first class student") : printf("Seli has to do better.");
+
 return 0;
 }
