@@ -238,7 +238,7 @@ if (my_cwa >= first_class){
 // so another way of using if and elsi is by using the shorthand if...else. also known as the ternary operator. so instead ogf going through the whole if else thing..which involves many lines of code just use this.
  
 // so with the same example
-(my_cwa >= first_class) ? printf("Seli is a first class student") : printf("Seli has to do better.");
+(my_cwa >= first_class) ? printf("\nSeli is a first class student") : printf("Seli has to do better.");
 
 return 0;
 }
