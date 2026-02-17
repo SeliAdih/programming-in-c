@@ -220,6 +220,8 @@ if(myAge>= VotingAge){
 */
  // day 8 of programming in C
 
+ 
+/*
  int my_cwa = 78 ;
  int first_class = 70 ;
  if (my_cwa >= first_class){
@@ -239,6 +241,8 @@ if (my_cwa >= first_class){
  
 // so with the same example
 (my_cwa >= first_class) ? printf("\nSeli is a first class student") : printf("Seli has to do better.");
+*/
+
 
 return 0;
 }
